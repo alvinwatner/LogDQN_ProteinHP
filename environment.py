@@ -9,6 +9,8 @@ License : MIT
 
 """
 
+from simulation import HP_simulation
+
 import numpy as np 
 import random
 import copy
@@ -341,5 +343,28 @@ class HP_Environment_V2:
 				
 			return chosen_Action, new_state, reward, done, info
 
-	def render(self):
-		pass
+	def render(self, plot = False):
+		"""
+		Parameter : Bool, if 'plot = False' use to show the folding process, and show the matplotlib figure subsequently
+						  if 'plot = True' then show only the matplotlib figure
+
+		"""		
+		render_Memory = {'action_Memory' : [] , 'amino_Info' : []}
+		obs = copy.deepcopy(self.observation.tolist())
+		for i in range(len(obs)):
+			if i % 2:
+				if obs[i] != 0:
+					render_Memory['action_Memory'].append(obs[i] - 3)
+			else:
+				if obs[i] == 1.0:
+					render_Memory['amino_Info'].append('H')
+				else:
+					render_Memory['amino_Info'].append('P')
+
+		sim = HP_simulation()
+		sim.reset(render_Memory['amino_Info'])
+
+		for action in render_Memory['action_Memory']:
+			new_state, reward, done = sim.step(action)
+
+		sim.render(plot = plot)		

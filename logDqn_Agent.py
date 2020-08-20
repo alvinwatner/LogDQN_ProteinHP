@@ -152,8 +152,8 @@ class Agent():
 
 		# Clips the minimum TD-targets in the standard space for both positive 
 		# and negative heads so as to avoid log(x <= 0).
-		pos_standard_td_target = tf.maximum(self.gamma**self.k, pos_standard_td_target_unclipped) 
-		neg_standard_td_target = tf.maximum(self.gamma**self.k, neg_standard_td_target_unclipped)  
+		pos_standard_td_target = tf.maximum(self.gamma**self.k, pos_standard_td_target_unclipped)
+		neg_standard_td_target = tf.maximum(self.gamma**self.k, neg_standard_td_target_unclipped)
 
 		# self._replay_net_outputs: The replayed states' Q-values.
 		_replay_net_outputs = self.train_Model.LogDqnPredict(s, c = self.c, pos_Delta = self.pos_Delta, neg_Delta = self.neg_Delta)
@@ -234,7 +234,7 @@ class Agent():
 
 		return loss
 
-	def add_experience(self, exp):    
+	def add_experience(self, exp):
 		if len(self.replay_buffer['s']) >= self.maxReplay_Buffer:
 			for key in self.replay_buffer.keys():
 				self.replay_buffer[key].pop(0)
@@ -268,7 +268,6 @@ class Agent():
 
 			exp = {'s': prev_observations, 'a': chosen_action - 1, 'r': reward, 's2': observations, 'done': done}
 			self.add_experience(exp)
-			self.train()
 		
 			loss = self.train()
 			if isinstance(loss, int):
@@ -276,12 +275,13 @@ class Agent():
 			else:
 				losses.append(loss.numpy())
 
+
 		if not episode % self.update_TargetPeriod:
-			self.target_Model.copy_Weights(source_model = self.train_Model.Net)						
+			self.target_Model.copy_Weights(source_model = self.train_Model.Net)
 
 		Total_Energy = info['total_Energy']
 
-		return rewards, Total_Energy, mean(losses)		
+		return rewards, Total_Energy, mean(losses)
 
 	def save_Model(self, model_dir, model_name, avg_rwd):
 		print(f"************************************************")
