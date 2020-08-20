@@ -35,7 +35,7 @@ class HP_Environment_V2:
 
 	"""
 	Create 2D Lattice with size for each dim = (Amino Length * 2 + 3). 
-	Amino Length Multiplied by 2 since the worst case is the amino sequence may go straight horizontal or vertical.
+	Amino Length Multiplied by 2 since the worst case is the amino sequence might go straight horizontal or vertical.
 	Added by 3, NO specific reason. Just increase the size a bit, otherwise there are cases where it will result index out of bound.
 	"""
 	def create_Lattice(self, amino_length):
@@ -51,8 +51,7 @@ class HP_Environment_V2:
 		- action = Int, action from action_space [0, 1, 2, 3] 
 		Return     : 
 		-available_action = List, Consist valid future action.
-		-free energy = Int, 1 if found H-H pairs and 0 otherwise. (Note : The original H-H pairs supposed to return -1 free energy, u might confuse why it set to 1, no worry it works rn, 
-																		  fix that soon).
+		-free energy = Int, 1 if found H-H pairs and 0 otherwise. (Note : The original H-H pairs supposed to return -1 free energy, u might confuse why it set to 1, no worry it works tho).
 
 	"""
 	def check_Future(self, done, action):
@@ -86,7 +85,7 @@ class HP_Environment_V2:
 		available_action = [] #initialize empty array.
 		free_Energy = 0 #initialize free energy to 0.
 
-		#iterate over the previous temporary available action and check if the future from the future might lead to : 1. Collision 2. Trapped 3. H - H pairs of Free Energy.
+		#iterate over the previous temporary available action and check if it might lead to Collision or Trapped or H - H pairs of Free Energy.
 		for i in range(len(temp_Action)):
 			if temp_Action[i] == 1:
 				isAmino, trapped, Energy = self.check_Neighbour(done, y_axis = y_UP, x_axis = self.x_axis)
@@ -103,8 +102,8 @@ class HP_Environment_V2:
 			free_Energy += Energy #sum up the free energy
 
 			if not isAmino: #if the future not collide, then
-				if not trapped: #it also not trapped
-					available_action.append(temp_Action[i]) #congratulation, u were approved to be the future valid action for the agent later on.
+				if not trapped: #if it also not trapped
+					available_action.append(temp_Action[i]) #then, congratulation, u just approved to be the future valid action for the agent later on.
 
 		return available_action, free_Energy 
 
@@ -116,9 +115,9 @@ class HP_Environment_V2:
 		- y_axis = Int, Value must in the range of the lattice size
 		- x_axis = Int, Value must in the range of the lattice size
 		Return     : 
+		-isAmino = Bool, True if the corresponding neighbour exist other molecul, False otherwise
 		-available_action = List, Consist valid future action.
-		-free energy = Int, 1 if found H-H pairs and 0 otherwise. (Note : The original H-H pairs supposed to return -1 free energy, u might confuse why it set to 1, no worry it works rn, 
-																		  fix that soon).
+		-free energy = Int, 1 if found H-H pairs and 0 otherwise.
 
 	"""
 	def check_Neighbour(self,done, y_axis = None, x_axis = None): 

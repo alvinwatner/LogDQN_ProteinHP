@@ -695,6 +695,7 @@ class HP_simulation():
 				plt.show()
 
 
+##Debug
 if __name__ == '__main__':
 
 	sim = HP_simulation()
