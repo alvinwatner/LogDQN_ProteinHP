@@ -30,7 +30,7 @@ Figure 4. Evaluate
 <img src="https://user-images.githubusercontent.com/58515206/133739873-e05a6f12-594f-4770-80d3-a62613a6996e.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/133739873-e05a6f12-594f-4770-80d3-a62613a6996e.png" width="375" height="150" />
 
 ## Result
-The result of this experiment shows that LogDQN agent has similar performance with DQN given best hyper-parameter setting. As what have been proposed by (Seijen et al., 2019), the logarithmic mapping operation to the Q-value able to achieve decent performance with lower discount factor than regular Q-value from DQN agent. See figure 5. and 6.
+The result of this experiment shows that LogDQN agent has similar performance to DQN agent with each given the best hyper-parameter setting. As what have been proposed by (Seijen et al., 2019), the logarithmic mapping operation to the Q-value able to achieve decent performance with lower discount factor than regular Q-value from DQN agent. See figure 5. and 6.
 
 </br>
 Figure 5. Folding Result Before and After Training LogDQN Agent with Discount 0.1
