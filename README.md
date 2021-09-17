@@ -11,7 +11,7 @@ I (Alvin Setiadi) responsible mostly for the code development in experimenting a
 
 ## User Interface  
 
-The front-end code is in guiv2.py. It include all the features to either train (Figure 1.), configure the hyper-parameter (Figure 2.), simulate (Figure 3.) the folding process and evaluate the result of specific agent (Figure 4.). However, it is not optimized well enough which cause a slow running experiences, especially when training model through the front-end. Therefore, it is highly recommend to perform every functionality directly from the back-end code.
+The front-end code is in guiv2.py. It include all the features to either train (Figure 1.), configure the hyper-parameter (Figure 2.), simulate (Figure 3.) the folding process and evaluate the result of specific agent (Figure 4.). However, these features are not optimized well enough which occasionally cause a slow running experiences, especially when training/loading model. Therefore, it is highly recommend to perform any of these functionality directly from the back-end code.
 
 Figure 1. Main Menu 
 </br>
@@ -30,7 +30,7 @@ Figure 4. Evaluate
 <img src="https://user-images.githubusercontent.com/58515206/133739873-e05a6f12-594f-4770-80d3-a62613a6996e.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/133739873-e05a6f12-594f-4770-80d3-a62613a6996e.png" width="375" height="150" />
 
 ## Result
-The result of this experiment shows that LogDQN agent has similar performance to DQN agent with each was given the best hyper-parameter setting. Figure 5 shows the folding result of LogDQN agent following the optimial policy after done training with 0.1 discount factor. In addition, as what have been proposed by (Seijen et al., 2019), the logarithmic mapping operation to the Q-value able to achieve decent performance with lower discount factor than regular Q-value from DQN agent (Figure 6.)
+The result of this experiment shows that LogDQN agent has similar performance to DQN agent with each was given the best hyper-parameter setting. Figure 5 shows the folding result of LogDQN agent following the optimial policy with 0.1 discount factor. In addition, as what have been proposed by (Seijen et al., 2019), the logarithmic mapping operation to the Q-value able to achieve decent performance with lower discount factor rather than regular Q-value from DQN agent (Figure 6.)
 
 </br>
 Figure 5. Folding Result Before and After Training LogDQN Agent with Discount 0.1
