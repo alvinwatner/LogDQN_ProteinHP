@@ -37,7 +37,7 @@ Figure 5. Folding Result Before and After Training LogDQN Agent with Discount 0.
 </br>
 <img src="https://user-images.githubusercontent.com/58515206/133741100-9627d128-48d9-484a-98f5-b860b76fa6c3.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/133741100-9627d128-48d9-484a-98f5-b860b76fa6c3.png" width="400" height="175" />
 
-Figure 6. Learning Curve Comparison Between LogDQN and DQN with Discount 0.1 and 0.3 with Toy Dataset
+Figure 6. Learning Curve Comparison Between LogDQN and DQN with Discount 0.1 and 0.3 on Toy Dataset
 </br>
 <img src="https://user-images.githubusercontent.com/58515206/133741885-df360d37-f1f6-4cfb-9d7a-de98b9fc663e.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/133741885-df360d37-f1f6-4cfb-9d7a-de98b9fc663e.png" width="450" height="450" />
 
