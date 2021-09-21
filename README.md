@@ -7,7 +7,7 @@ The main contribution of this bachelor thesis is conducting an experiment in obs
 # Motivation
 The work from [(Seijen and Vatemi, 2020)](https://proceedings.neurips.cc/paper/2019/file/eba237eccc24353ccaa4d62013556ac6-Paper.pdf) shows a potential of lower discount factor to perform better in specific task scenario than the higher one ([See section 3. Analysis of Discount Factor Effects](https://proceedings.neurips.cc/paper/2019/file/eba237eccc24353ccaa4d62013556ac6-Paper.pdf)). Therefore, the main motivation in this research is to assume in longer protein sequence that result in exponential growth of the state space, there exist a specific scenario that lower discount factor will performs better in finding the lowest enegy value structure. To establish this assumtion, we leverage LogDQN, an RL algorithm that enable lower discount factor to work by performing logarithmic mapping function to the action-value function Q-value.
 </br>
-Below I show a screenshot of figure 1. in section 3. on [LogDQN (Seijen and Vatemi, 2020)](https://proceedings.neurips.cc/paper/2019/file/eba237eccc24353ccaa4d62013556ac6-Paper.pdf).
+Below I show a screenshot of figure 1. in section 3. on [(Seijen and Vatemi, 2020) paper](https://proceedings.neurips.cc/paper/2019/file/eba237eccc24353ccaa4d62013556ac6-Paper.pdf).
 </br>
 <img src="https://user-images.githubusercontent.com/58515206/134119706-f0182d84-c87b-4bf5-8e9b-bbd2f6a35c5f.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/134119706-f0182d84-c87b-4bf5-8e9b-bbd2f6a35c5f.png" width="500" height="250" />
 
