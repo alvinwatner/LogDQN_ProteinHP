@@ -1,3 +1,6 @@
+##Additional Reading
+To understand how protein folding problem in bidimensional hydrophobic-polar work, I provide a simple explanation [here](https://github.com/alvinwatner/HP_Protein_Fold-GymEnv).
+
 # Contribution
 The main contribution of this bachelor thesis is conducting an experiment in observing the behaviour of [LogDQN (Seijen and Vatemi, 2020)](https://proceedings.neurips.cc/paper/2019/file/eba237eccc24353ccaa4d62013556ac6-Paper.pdf) learning agent in discrete state space. The task is the mathematical representation of protein folding problem, bidimensional hydrophobic-polar model. In short, given a sequence of H and P symbols with length N, the objective is to find the best permutation of protein stuctures that has the lowest free energy value. The research journal, however, not published for public property. 
 
