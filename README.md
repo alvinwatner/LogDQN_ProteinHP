@@ -8,13 +8,6 @@ Below I show a screenshot of figure 1. in section 3. on [LogDQN (Seijen and Vate
 </br>
 <img src="https://user-images.githubusercontent.com/58515206/134119706-f0182d84-c87b-4bf5-8e9b-bbd2f6a35c5f.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/134119706-f0182d84-c87b-4bf5-8e9b-bbd2f6a35c5f.png" width="500" height="250" />
 
-## Team Member
-* Alvin Setiadi 
-* Edwan Santoso
-* Kelvin Chayadi
-
-I (Alvin Setiadi) responsible mostly for the code development in experimenting and evaluating results, while Edwan Santoso and Kelvin Chayadi collaborated mainly in constructing thesis paper. 
-
 
 ## User Interface  
 
@@ -47,6 +40,13 @@ Figure 5. Folding Result Before and After Training LogDQN Agent with Discount 0.
 Figure 6. Learning Curve Comparison Between LogDQN and DQN with Discount 0.1 and 0.3 on Toy Dataset
 </br>
 <img src="https://user-images.githubusercontent.com/58515206/133741885-df360d37-f1f6-4cfb-9d7a-de98b9fc663e.png" alt="" data-canonical-src="https://user-images.githubusercontent.com/58515206/133741885-df360d37-f1f6-4cfb-9d7a-de98b9fc663e.png" width="450" height="450" />
+
+## Team Member
+* Alvin Setiadi 
+* Edwan Santoso
+* Kelvin Chayadi
+
+I (Alvin Setiadi) responsible mostly for the code development in experimenting and evaluating results, while Edwan Santoso and Kelvin Chayadi collaborated mainly in constructing thesis paper. 
 
 
 ## License
