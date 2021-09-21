@@ -1,4 +1,4 @@
-##Additional Reading
+## Additional Reading
 To understand how protein folding problem in bidimensional hydrophobic-polar work, I provide a simple explanation [here](https://github.com/alvinwatner/HP_Protein_Fold-GymEnv).
 
 # Contribution
