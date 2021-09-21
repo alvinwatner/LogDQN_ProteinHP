@@ -54,6 +54,6 @@ The idea of this research was initiate by Alvin Setiadi (Me). I responsible most
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://towardsdatascience.com/deep-learning-for-nlp-with-pytorch-and-torchtext-4f92d69052f) file for details
 
 
