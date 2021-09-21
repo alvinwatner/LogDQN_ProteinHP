@@ -49,7 +49,7 @@ Figure 6. Learning Curve Comparison Between LogDQN and DQN with Discount 0.1 and
 * Edwan Santoso
 * Kelvin Chayadi
 
-I (Alvin Setiadi) responsible mostly for the code development in experimenting and evaluating results, while Edwan Santoso and Kelvin Chayadi collaborated mainly in constructing thesis paper. 
+The idea of this research was initiate by Alvin Setiadi. Alvin Setiadi responsible mostly for the code development in experimenting and evaluating results, while Edwan Santoso and Kelvin Chayadi collaborated mainly in constructing thesis paper. 
 
 
 ## License
